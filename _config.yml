@@ -1,6 +1,6 @@
 # Jekyll configuration
 
-name: kkyunnnnn dev
+name: dev.nkkim
 description: web develop
 
 # Url is currently only used only for the RSS feed in feed.xml
@@ -10,21 +10,22 @@ url: 'http://kkyunnnn.github.io'
 # For a project page here should be a project name. Otherwise (for user's/organization's page leave it empty)
 
 author: nkkim
+copyright: 2016 ~
 
 share:
-  facebook: false
-  twitter: false
-  gplus: false
-  linkedin: true
-  pinterest: false
-  email: true
-#social:
-#  github: streetturtle
-#  stackoverflow: ''
-#  linkedin:
-#  instagram: ''
-#  lastfm: ''
-#  rss: feed.xml
+    facebook: false
+    twitter: false
+    gplus: false
+    linkedin: true
+    pinterest: false
+    email: true
+social:
+    github: kkyunnnn
+    #  stackoverflow: ''
+    #  linkedin:
+    #  instagram: ''
+    #  lastfm: ''
+    rss: feed.xml
 
 # Google Analytics key, leave blank to ignore
 # google_analytics_key:
@@ -47,7 +48,7 @@ permalink: /:year/:month/:title/
 
 markdown: kramdown
 kramdown:
-  input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
-  hard_wrap: true
+    input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+    hard_wrap: true
 
-exclude: ['README.md', 'LICENSE']
+exclude: [ 'README.md', 'LICENSE' ]
