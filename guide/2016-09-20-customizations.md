@@ -1,4 +1,4 @@
----
+<!---
 layout: post
 title: "Customizations"
 date: 2016-09-20 16:25:06
@@ -7,7 +7,7 @@ share: true
 tags:
  - customizations
  - jekyll
----
+--->
 
 # Accent color
 

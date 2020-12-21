@@ -1,10 +1,10 @@
----
+<!---
 layout: post
 title: "Code snippets"
 date: 2016-10-01 16:25:06
 tags: code jekyll
 description: Sample post showing how code samples would look like
----
+--->
 
 ## Introduction
 
