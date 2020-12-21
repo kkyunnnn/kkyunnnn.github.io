@@ -1,0 +1,33 @@
+---
+layout: post
+title: "JVM"
+date: 2020-12-22 00:45:05
+description: JAVA 메모리 사용 영역
+tags: 
+ - java
+ - jvm
+---
+
+## JVM 
+
+#### 메모리 사용영역
+
+![img]({{ '/assets/images/jvm.jpg' | relative_url }}){: .center-image }
+
+**1. 메소드 영역 (Method Area)**   
+* 코드에 사용되는 클래스(~.class)들을 클래스 로더로 읽어 클래스별 런타임 상수풀(Runtime Constant Pool),
+static 필드, 필드(Field) 데이터, 메소드(Method) 데이터, 메소드 코드, 생성자(Constructor) 코드 등을 분류해서 저장.
+* JVM이 시작할 때 생성되고 모든 스레드가 공유.
+
+**2. 힙 영역 (Heap Area)**   
+* 객체와 배열이 생성되는 영역. 
+* 힙 영역에 생성된 객체와 배열은 JVM 스택 영역의 변수나 다른 객체의 필드에서 참조.
+* 참조하는 변수나 필드가 없다면 GC (Garbage Collector)가 객체를 힙 영역에서 제거.
+
+**3. 스택 영역 (Stack Area)**   
+* JVM스택은 각 스레드마다 하나씩 존재, 스레드가 시작될 때 할당.
+* JVM 스택은 메소드를 호춣할 때마다 프레임(Frame)을 추가(Push)하고 메소드가 종료되면 해당 프레임을 제거(Pop).
+* 자바에서는 추가적으로 스레드를 생성하지 않았다면 main스레드만 존재하므로 JVM 스택도 하나다.
+* 예외 발생 시 printStackTrace() 메소드로 보여주는 Stack Trace의 각 라인은 하나의 프레임을 표현한다.
+* 컴파일시 size 및 life cycle이 정해진다.
+* 수행되는 method 정보, 지역변수, 매개변수, 연산 중 발생하는 임시데이터 저장
